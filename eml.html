@@ -1,0 +1,577 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" background="#F7F7F5"
+    style="background:#F7F7F5!important;background-color:#F7F7F5!important">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Вход в профиль с нового устройства</title>
+    <style>
+        a {
+            text-decoration: none
+        }
+
+        @media only screen {
+            html {
+                min-height: 100%;
+                background: #F7F7F5
+            }
+        }
+
+        @media only screen and (max-width:716px) {
+            table.body table.container .hide-on-mobile {
+                display: none !important;
+                width: 0;
+                mso-hide: all;
+                overflow: hidden
+            }
+
+            table.body img {
+                width: auto;
+                height: auto
+            }
+
+            table.body center {
+                min-width: 0 !important
+            }
+
+            img.banner {
+                width: 100% !important
+            }
+
+            table.body .container {
+                width: 100% !important
+            }
+
+            table.body .columns {
+                height: auto !important;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 16px !important;
+                padding-right: 16px !important
+            }
+
+            table.body .columns .columns {
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            table.body .collapse .columns {
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            th.small-2 {
+                display: inline-block !important;
+                width: 16.66667% !important
+            }
+
+            th.small-3 {
+                display: inline-block !important;
+                width: 25% !important
+            }
+
+            th.small-6 {
+                display: inline-block !important;
+                width: 50% !important
+            }
+
+            th.small-9 {
+                display: inline-block !important;
+                width: 75% !important
+            }
+
+            th.small-10 {
+                display: inline-block !important;
+                width: 83.33333% !important
+            }
+
+            th.small-12 {
+                display: inline-block !important;
+                width: 100% !important
+            }
+
+            .result__col th {
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            table.menu {
+                width: 100% !important
+            }
+
+            table.menu td,
+            table.menu th {
+                width: auto !important;
+                display: inline-block !important
+            }
+
+            table.menu.vertical td,
+            table.menu.vertical th {
+                display: block !important
+            }
+
+            table.menu[align=center] {
+                width: auto !important
+            }
+
+            .announce__row img {
+                max-height: none !important;
+                width: 100% !important;
+                height: auto !important
+            }
+
+            .announce__content {
+                padding-left: 0 !important;
+                padding-top: 10px !important
+            }
+
+            .announce table.button,
+            .announce table.button a {
+                width: 100% !important;
+                text-align: center !important
+            }
+
+            table.menu.apps .menu-item img {
+                width: 135px !important
+            }
+
+            .before_social tr td {
+                font-size: 18px !important;
+                line-height: 18px !important;
+                height: 18px !important
+            }
+
+            .note {
+                padding: 0 5% !important
+            }
+        }
+
+        @media only screen and (max-width:716px) {
+            .padding-content {
+                padding: 30px 16px 6px !important;
+            }
+
+            p.title {
+                font-size: 26px !important;
+                line-height: 30px !important;
+                margin-bottom: 18px !important;
+            }
+
+            .text {
+                font-size: 16px !important;
+                line-height: 22px !important;
+                margin-bottom: 22px !important;
+            }
+
+            .padding-items {
+                padding: 16px 15px !important;
+            }
+
+            .spacer-between-items tr td {
+                font-size: 12px !important;
+                line-height: 12px !important;
+                height: 12px !important;
+            }
+
+            .text-center {
+                text-align: center !important
+            }
+
+            .nobr br {
+                display: none
+            }
+
+            .first .item-body {
+                padding: 18px 0 0 !important;
+            }
+
+            .last .item-body {
+                padding: 12px 0 0 !important;
+            }
+
+            .alert-body {
+                padding: 20px 10px !important;
+            }
+
+            .alert-title {
+                font-size: 26px !important;
+                line-height: 30px !important;
+            }
+
+            .alert-place {
+                line-height: 22px !important;
+                margin: 0 !important;
+            }
+
+            .item .button td {
+                width: 257px !important;
+                max-width: 100% !important;
+            }
+
+            .letter-body {
+                padding: 22px 0 0 !important
+            }
+
+            .float-center {
+                float: none !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .buttons .button td {
+                width: 257px !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#F7F7F5" vlink="#0AF"
+    style="-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;Margin:0;background-color:#F7F7F5!important;box-sizing:border-box;color:#000000;font-family:Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.4;margin:0;min-width:100%;padding:0;text-align:left;width:100%!important">
+    <img src="https://www.avito.ru/mailStat/open/pixel.gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+        border="0" width="1px"
+        style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; border: none;"></img>
+    <span class="preheader"
+        style="color:transparent;display:none!important;font-size:0;height:0;line-height:0;max-height:0;max-width:0;mso-hide:all!important;opacity:0;overflow:hidden;visibility:hidden;width:0">
+        Если это не вы, смените пароль </span><span class="preheader-clean"
+        style="color:transparent;display:none!important;font-size:0;height:0;line-height:0;max-height:0;max-width:0;mso-hide:all!important;opacity:0;overflow:hidden;visibility:hidden;width:0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ </span>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%" class="body" bgcolor="#F7F7F5"
+        style="Margin:0;background:#F7F7F5;background-color:#F7F7F5!important;border-collapse:collapse;border-spacing:0;color:#000000;font-family:Arial,sans-serif;font-size:15px;font-weight:400;height:100%;line-height:1.4;margin:0;padding:0;text-align:left;vertical-align:top;width:100%">
+        <tbody>
+            <tr style="padding:0;text-align:left;vertical-align:top">
+                <td
+                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.4;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                    <table width="100%"
+                        style="Margin:0 auto;background:#fff!important;border-collapse:collapse;border-radius:3px;border-spacing:0;hyphens:none!important;margin:0 auto;padding:0!important;text-align:inherit;vertical-align:top;width:100%;max-width:700px"
+                        bgcolor="#F7F7F5" align="center" class="table_container">
+                        <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                <td
+                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background-color:#F7F7F5!important;border-collapse:collapse!important;color:#000000;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.4;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                    <table width="700" bgcolor="#F7F7F5" align="center" class="container"
+                                        style="Margin:0 auto;background:#fff!important;border-collapse:collapse;border-radius:0px;border-spacing:0;hyphens:none!important;margin:0 auto;padding:0!important;text-align:inherit;vertical-align:top;width:100%">
+                                        <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td class="logo"
+                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background-color:#F7F7F5!important;border-collapse:collapse!important;color:#000000;font-family:Arial,sans-serif;font-size:1px;font-weight:400;hyphens:auto;line-height:1px;margin:0;padding:14px 0 18px;text-align:center;vertical-align:top;word-wrap:break-word">
+                                                    <center data-parsed="" style="min-width:100%;width:100%"> <a
+                                                            href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Fwww.avito.ru%252F%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                            target="_blank"
+                                                            style="Margin:0;color:#0AF;display:inline-block;text-decoration:none;width:162px"
+                                                            align="center"><img height="auto"
+                                                                src="https://www.avito.ru/files/CRM/new_logo_2022/avito_logo.png?_t=1660906404"
+                                                                style="Margin:0 auto;-ms-interpolation-mode:bicubic;border:0;clear:both;display:block;margin:0 auto;max-width:100%;outline:0;width:162px"
+                                                                width="162" /></a> </center>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="700" bgcolor="#FFFFFF" align="center" class="container"
+                                        style="Margin:0 auto;background:#fff!important;border-collapse:collapse;border-radius:6px;border-spacing:0;hyphens:none!important;margin:0 auto;padding:0;text-align:inherit;vertical-align:top;width:100%">
+                                        <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td
+                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.4;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                    <table role="presentation" border="0" cellpadding="0"
+                                                        cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="padding-content"
+                                                                    style="vertical-align:top;width:100%;padding: 40px 7.15%;">
+                                                                    <table width="100%" class="row alert"
+                                                                        style="border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;border-radius:6px;width:100%;border:1px solid #E0E0E0"
+                                                                        valign="top">
+                                                                        <tbody>
+                                                                            <tr
+                                                                                style="padding:0;text-align:left;vertical-align:top">
+                                                                                <th class="col small-12 large-6 columns first"
+                                                                                    style="Margin:0 auto;color:#000000;font-family:Arial,sans-serif;font-size:16px;font-weight:400;line-height:22px;margin:0 auto;padding:0;padding-left:0!important;padding-right:0!important;text-align:left;vertical-align:top;width:100%">
+                                                                                    <table
+                                                                                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                                        <tbody>
+                                                                                            <tr
+                                                                                                style="padding:0;text-align:left;vertical-align:top">
+                                                                                                <td class="alert-body"
+                                                                                                    style="Margin:0;color:#000000;font-family:Arial,sans-serif;font-size:0;font-weight:400;line-height:0;margin:0;padding:20px 20px 30px;text-align:left;border:none">
+                                                                                                    <p class="alert-title nobr"
+                                                                                                        style="Margin:0;Margin-bottom:16px;color:#000000;font-family:Arial,sans-serif;font-size:30px;font-weight:700;hyphens:none!important;line-height:34px;margin:0;margin-bottom:16px;padding:0;text-align:center">
+                                                                                                        Это вы вошли в
+                                                                                                        профиль? </p>
+                                                                                                    <p class="alert-place"
+                                                                                                        style="Margin:0;Margin-bottom:2px;color:#000000;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none!important;line-height:24px;margin:0;margin-bottom:2px;padding:0;text-align:center">
+                                                                                                        Прушкув,
+                                                                                                        Мазовецкое воеводство,
+                                                                                                        Польша, 20
+                                                                                                        декабря в 18:16
+                                                                                                    </p>
+                                                                                                    <p class="alert-date"
+                                                                                                        style="Margin:0;Margin-bottom:6px;color:#757575;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none!important;line-height:22px;margin:0;margin-bottom:6px;padding:0;text-align:center">
+                                                                                                        Windows, браузер
+                                                                                                        Yandex Browser
+                                                                                                    </p>
+                                                                                                    <div class="buttons"
+                                                                                                        style="text-align:center;font-size: 1px;line-height: 1px;">
+                                                                                                        <div class="button-container"
+                                                                                                            style="display:inline-block;vertical-align:top;text-align:center;width:264px">
+                                                                                                            <table
+                                                                                                                align="center"
+                                                                                                                class="button btn rounded text-center float-center"
+                                                                                                                style="Margin:0 auto;border:none;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:auto">
+                                                                                                                <tbody>
+                                                                                                                    <tr
+                                                                                                                        style="padding:0;text-align:left;vertical-align:top">
+                                                                                                                        <td
+                                                                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.75;margin:0;padding:0;padding-top:12px;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                                                                            <table
+                                                                                                                                style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top">
+                                                                                                                                <tbody>
+                                                                                                                                    <tr
+                                                                                                                                        style="padding:0;text-align:left;vertical-align:top">
+                                                                                                                                        <td
+                                                                                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background:#F2EFE9;border:none;border-collapse:collapse!important;border-radius:500px;color:#181818;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.55;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;width:252px">
+                                                                                                                                            <a href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Fwww.avito.ru%252Fweb%252F1%252Fprofile%252Fsessions%252Fredirect%252Fnotme%253Fparams%253DZGV2aWNlSWQ9Mnk0ZjNsczMuMW43dHp4NS5kdjFzdno4c2VjODAmbG9naW5UeXBlPXZrLWlkJm1vZGU9c2Vzc2lvbkZsb3cmc2Vzc2lvbklkSGFzaD1NV1ZtTnpjd056WXlZelZsWkRJeE1tRTBaalkyWVRVMFlqSTFaVFExTVRFd05HVTVabVppTnpwTmJtc3dXbXBPYzJONlRYVk5WelF6WkVod05FNVROV3RrYWtaNlpHNXZOR015Vm1wUFJFRSZzb3VyY2U9bSZ1c2VySWQ9MTc0NTEzMzEx%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                                                                                                                target="_blank"
+                                                                                                                                                style="Margin:0;background:#F2EFE9;border:none!important;border-radius:22px;box-sizing:border-box;color:#181818!important;display:inline-block;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1!important;margin:0;mso-style-priority:100!important;text-align:center;text-decoration:none;width:100%;padding:16px 0 15px;">
+                                                                                                                                                <!--[if (mso)|(mso 16)]> <table role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F2EFE9"> <tr> <td style="vertical-align:top;width:100%;padding:16px 20px 15px;background:#F2EFE9;text-align:center" bgcolor="#F2EFE9"> <a href="https://www.avito.ru/web/1/profile/sessions/redirect/notme?params=ZGV2aWNlSWQ9Mnk0ZjNsczMuMW43dHp4NS5kdjFzdno4c2VjODAmbG9naW5UeXBlPXZrLWlkJm1vZGU9c2Vzc2lvbkZsb3cmc2Vzc2lvbklkSGFzaD1NV1ZtTnpjd056WXlZelZsWkRJeE1tRTBaalkyWVRVMFlqSTFaVFExTVRFd05HVTVabVppTnpwTmJtc3dXbXBPYzJONlRYVk5WelF6WkVod05FNVROV3RrYWtaNlpHNXZOR015Vm1wUFJFRSZzb3VyY2U9bSZ1c2VySWQ9MTc0NTEzMzEx" target="_blank" style="color:#181818;text-decoration:none!important;text-decoration:none;width:100%;text-align:center;"> <font color="#181818" face="Arial,sans-serif;text-decoration:none!important;text-decoration:none;"> <![endif]-->
+                                                                                                                                                Не
+                                                                                                                                                я,
+                                                                                                                                                сменить
+                                                                                                                                                пароль
+                                                                                                                                                <!--[if mso]> </font> </a> </td> </tr> </table> <![endif]-->
+                                                                                                                                            </a>
+                                                                                                                                        </td>
+                                                                                                                                    </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </div>
+                                                                                                        <div class="button-container"
+                                                                                                            style="display:inline-block;vertical-align:top;text-align:center;width:264px">
+                                                                                                            <table
+                                                                                                                class="button btn rounded text-center float-center"
+                                                                                                                style="Margin:0 auto;border:none;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:auto">
+                                                                                                                <tbody>
+                                                                                                                    <tr
+                                                                                                                        style="padding:0;text-align:left;vertical-align:top">
+                                                                                                                        <td
+                                                                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.75;margin:0;padding:0;padding-top:12px;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                                                                            <table
+                                                                                                                                style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top">
+                                                                                                                                <tbody>
+                                                                                                                                    <tr
+                                                                                                                                        style="padding:0;text-align:left;vertical-align:top">
+                                                                                                                                        <td
+                                                                                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background:#F2EFE9;border:none;border-collapse:collapse!important;border-radius:500px;color:#181818;font-family:Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.55;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;width:252px;">
+                                                                                                                                            <a href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Fwww.avito.ru%252Frossiya%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                                                                                                                target="_blank"
+                                                                                                                                                style="Margin:0;background:#F2EFE9;border:none!important;border-radius:22px;box-sizing:border-box;color:#181818!important;display:inline-block;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1!important;margin:0;mso-style-priority:100!important;text-align:center;text-decoration:none;width:100%;padding:16px 0 15px;">
+                                                                                                                                                <!--[if (mso)|(mso 16)]> <table role="presentation" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F2EFE9"> <tr> <td style="vertical-align:top;width:100%;padding:16px 20px 15px;background:#F2EFE9;text-align:center" bgcolor="#F2EFE9"> <a href="https://www.avito.ru/rossiya" target="_blank" style="color:#181818;text-decoration:none!important;text-decoration:none;width:100%;text-align:center;"> <font color="#181818" face="Arial,sans-serif;text-decoration:none!important;text-decoration:none;"> <![endif]-->
+                                                                                                                                                Я,
+                                                                                                                                                перейти
+                                                                                                                                                к
+                                                                                                                                                объявлениям
+                                                                                                                                                <!--[if mso]> </font> </a> </td> </tr> </table> <![endif]-->
+                                                                                                                                            </a>
+                                                                                                                                        </td>
+                                                                                                                                    </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table
+                                                                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                        <tbody>
+                                                                            <tr
+                                                                                style="padding:0;text-align:left;vertical-align:top">
+                                                                                <td class="letter-body"
+                                                                                    style="Margin:0;color:#000000;font-family:Arial,sans-serif;font-size:0;font-weight:400;line-height:0;margin:0;padding:32px 25px 0;text-align:left;border:none">
+                                                                                    <p class="text"
+                                                                                        style="Margin:0 0 12px;color:#181818;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none!important;line-height:24px;margin:0 0 12px;padding:0;text-align:left">
+                                                                                        Если вы не заходили в профиль с
+                                                                                        этого устройства, смените пароль
+                                                                                        на Авито, в почте и привязанных
+                                                                                        соцсетях, чтобы защитить аккаунт
+                                                                                        от злоумышленников.</p>
+                                                                                    <p class="text"
+                                                                                        style="Margin:0 0 12px;color:#181818;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none!important;line-height:24px;margin:0 0 12px;padding:0;text-align:left">
+                                                                                        Если это были вы, всё в порядке.
+                                                                                    </p>
+                                                                                    <p class="text"
+                                                                                        style="Margin:0;color:#181818;font-family:Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none!important;line-height:24px;margin:0;padding:0;text-align:left">
+                                                                                        Все устройства, на которых
+                                                                                        открыт ваш профиль, можно
+                                                                                        посмотреть <a
+                                                                                            href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Favito.ru%252F%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                                                            target="_blank"
+                                                                                            style="color:#0AF;text-decoration:none;hyphens:none;">в
+                                                                                            настройках</a>. А узнать,
+                                                                                        как установить надёжный пароль,
+                                                                                        — <a href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Fsupport.avito.ru%252Farticles%252F1399%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                                                            target="_blank"
+                                                                                            style="color:#0AF;text-decoration:none;hyphens:none;">в
+                                                                                            Помощи</a>.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="700"
+                                        style="Margin:0 auto;background:#fff!important;border-collapse:collapse;border-radius:3px;border-spacing:0;hyphens:none!important;margin:0 auto;padding:0!important;text-align:inherit;vertical-align:top;width:100%"
+                                        bgcolor="#F7F7F5" align="center" class="container">
+                                        <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td
+                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background-color:#F7F7F5!important;border-collapse:collapse!important;color:#000000;font-family:Lato,Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.4;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                    <table class="spacer before_social"
+                                                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                <td height="35px"
+                                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Lato,Arial,sans-serif;font-size:35px;font-weight:400;hyphens:auto;line-height:35px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="text-center note"
+                                                        style="Margin:0;Margin-bottom:10px;color:#949494;font-family:Lato,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.7;hyphens:none;margin:0!important;margin-bottom:10px;padding:0;text-align:center">
+                                                        Вы получили это письмо, потому что являетесь <a
+                                                            href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Fwww.avito.ru%252Flegal%252Frules%252Fterms-of-use%253Futm_content%253Dlink_user_agreement%2526utm_medium%253Demail%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                            target="_blank"
+                                                            style="color:#343434;text-decoration:underline!important">зарегистрированным
+                                                            пользователем</a> Авито. <br />Если у вас возникли вопросы,
+                                                        ответы можно найти <a
+                                                            href="https://www.avito.ru/extended-profile/switch?id=174513311&then=https%3A%2F%2Fwww.avito.ru%2FmailStat%2Fclick%3Fredirect%3Dhttps%253A%252F%252Fsupport.avito.ru%252Fhc%252Fru%26token%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub3RpZmljYXRpb25faWQiOiJuZXcubG9naW4ubm90aWZpY2F0aW9uLjIuZW1haWwubmMiLCJub3RpZmljYXRpb25fbWVzc2FnZV9pZCI6IjY3MjhlNjc3Njk3OWQxMDdiNzQ3ZjE3MTE3NDUxMzMxMSIsIm5zX2NoYW5uZWwiOiJlbWFpbCIsInByb2plY3QiOiJhdXRoLWRldmljZSIsInRhcmdldF9oYXNoIjoiMTc0NTEzMzExIiwidGFyZ2V0X3R5cGUiOjEsInVpZCI6MTc0NTEzMzExfQ.jUlpXsIR43NhBB5mN_LQYK77FxHAcLjVn2S0cTuqkDo"
+                                                            target="_blank"
+                                                            style="color:#343434;text-decoration:underline!important">в
+                                                            разделе Помощь</a>.</p>
+                                                    <table class="spacer before__unsend"
+                                                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                <td height="20px"
+                                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Lato,Arial,sans-serif;font-size:20px;font-weight:400;hyphens:auto;line-height:20px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="text-center note"
+                                                        style="Margin:0;Margin-bottom:10px;color:#343434;font-family:Lato,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.7;margin:0!important;margin-bottom:10px;padding:0;text-align:center">
+                                                        Установить мобильное приложение</p>
+                                                    <center data-parsed="" style="min-width:100%;width:100%">
+                                                        <table align="center" class="menu apps text-center float-center"
+                                                            style="Margin:0 auto;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:auto!important">
+                                                            <tbody>
+                                                                <tr
+                                                                    style="padding:0;text-align:left;vertical-align:top">
+                                                                    <td
+                                                                        style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Lato,Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:1.4;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                        <table
+                                                                            style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top">
+                                                                            <tbody>
+                                                                                <tr
+                                                                                    style="padding:0;text-align:left;vertical-align:top">
+                                                                                    <th class="menu-item float-center"
+                                                                                        style="Margin:0 auto;color:#000000;float:none;font-family:Lato,Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.4;margin:0 auto;padding:5px;padding-right:4px;text-align:center">
+                                                                                        <a href="https://app.adjust.com/9vbffb"
+                                                                                            target="_blank"
+                                                                                            style="Margin:0;color:#0AF;font-family:Lato,Arial,sans-serif;font-weight:400;line-height:1.4;margin:0;padding:0;text-align:center;text-decoration:underline"><img
+                                                                                                alt="Скачать на App Store"
+                                                                                                width="145"
+                                                                                                height="auto"
+                                                                                                style="-ms-interpolation-mode:bicubic;border:0;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:145px"
+                                                                                                src="https://www.avito.ru/files/image/2019/htdev/icon_appstore.png?_t=1562748672" />
+                                                                                        </a></th>
+                                                                                    <th class="menu-item float-center"
+                                                                                        style="Margin:0 auto;color:#000000;float:none;font-family:Lato,Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.4;margin:0 auto;padding:5px;padding-right:4px;text-align:center">
+                                                                                        <a href="https://app.adjust.com/lqrwid"
+                                                                                            target="_blank"
+                                                                                            style="Margin:0;color:#0AF;font-family:Lato,Arial,sans-serif;font-weight:400;line-height:1.4;margin:0;padding:0;text-align:center;text-decoration:underline"><img
+                                                                                                alt="Скачать на Google Play"
+                                                                                                width="145"
+                                                                                                height="auto"
+                                                                                                style="-ms-interpolation-mode:bicubic;border:0;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:145px"
+                                                                                                src="https://www.avito.ru/files/image/2019/htdev/icon_google.png?_t=1562748672" /></a>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </center>
+                                                    <table class="spacer"
+                                                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                <td height="25px"
+                                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Lato,Arial,sans-serif;font-size:25px;font-weight:400;hyphens:auto;line-height:25px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="spacer"
+                                                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                <td height="30px"
+                                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Lato,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="spacer"
+                        style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                <td height="20px"
+                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000000;font-family:Arial,sans-serif;font-size:20px;font-weight:400;hyphens:auto;line-height:20px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="display:none;white-space:nowrap;font:15px courier;line-height:0"> </div>
+</body>
+
+</html>
